@@ -10,7 +10,7 @@ on:
 jobs:
   test-backend:
 
-  
+
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
@@ -56,3 +56,11 @@ jobs:
           context: ./http-server
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/tp-devops-httpd:latest
           push: ${{ github.ref == 'refs/heads/main' }}
+
+      - name: SonarCloud Analysis
+        run: mvn -B verify sonar:sonar \
+        -Dsonar.projectKey=IsabelaTorres0_tp-devops-correction-docker \
+        -Dsonar.organization=IsabelaTorres0 \
+        -Dsonar.host.url=https://sonarcloud.io \
+        -Dsonar.login=${{ secrets.SONAR_TOKEN }} \
+        --file ./simple-api/pom.xml
