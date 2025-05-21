@@ -24,7 +24,7 @@ jobs:
         run: mvn clean verify
     
       - name: SonarCloud Analysis
-        run: cd ./simple-api && mvn -B verify sonar:sonar -Dsonar.projectKey=IsabelaTorres0_tp-devops-correction-docker -Dsonar.organization=IsabelaTorres0 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+        run: cd ./simple-api && mvn -B verify sonar:sonar -Dsonar.projectKey=IsabelaTorres0_tp-devops-correction-docker -Dsonar.organization=isabelatorres0 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
 
   build-and-push-docker-image:
