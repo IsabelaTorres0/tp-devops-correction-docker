@@ -4,6 +4,7 @@
   docker_container:
     name: simple-api
     image: isabelatorres/tp-devops-simple-api
+    pull: yes
     restart_policy: on-failure
     restart_retries: 3
 
