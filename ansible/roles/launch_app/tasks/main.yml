@@ -1,0 +1,15 @@
+---
+# tasks file for roles/lunch_app
+- name: Launch simple-api container
+  docker_container:
+    name: simple-api
+    image: isabelatorres/tp-devops-simple-api
+    restart_policy: on-failure
+    restart_retries: 3
+
+    env: 
+      DATABASE_HOST: database
+      DATABASE_PASSWORD: pwd
+    networks:
+      - name: my-network
+      - name: my-second-net

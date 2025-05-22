@@ -1,0 +1,6 @@
+---
+# tasks file for roles/env_var
+- name: Copy .env file to remote server
+  copy:
+    src: files/.env
+    dest: /home/admin/.env

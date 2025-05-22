@@ -1,0 +1,6 @@
+#Postgress pasword 
+POSTGRES_PASSWORD= pwd
+
+#variables backend
+DATABASE_HOST= database
+DATABASE_PASSWORD= pwd

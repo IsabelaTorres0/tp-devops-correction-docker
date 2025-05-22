@@ -1,0 +1,13 @@
+---
+# tasks file for roles/lunch_proxy
+- name: Launch HTTPD proxy container
+  docker_container:
+    name: httpd
+    image: isabelatorres/tp-devops-httpd
+    pull: yes
+    restart_policy: no
+    ports:
+      - "80:80"
+    networks:
+    #create a new network asociate it, create an env file
+      - name: my-second-net
