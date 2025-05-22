@@ -6,6 +6,7 @@ on:
     types:
       - completed
 
+
 jobs:
   deploy:
     name: Deploy with Ansible
@@ -31,7 +32,6 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-          
       - name: Run Ansible Playbook
         run: |
           ansible-playbook ansible/site.yml -i ansible/inventory.yml
