@@ -47,13 +47,8 @@ public class DepartmentController {
         return ResponseEntity.ok(this.departmentService.getDepartmentByName(name));
     }
 
-    @GetMapping("/{departmentName}/count")
-    public ResponseEntity<Object> getDepartmentCountByName(@PathVariable(name="departmentName") String name) {
-        Optional<Department> optionalDepartment = Optional.ofNullable(this.departmentService.getDepartmentByName(name));
-        if (optionalDepartment.isEmpty()) {
-            return ResponseEntity.notFound().build();
-        }
-
-        return ResponseEntity.ok(this.studentService.getStudentsNumberByDepartmentName(name));
+    @GetMapping("/test")
+    public ResponseEntity<Object> getDepartmentCountByName() {
+        return ResponseEntity.ok("test ok")
     }
 }
