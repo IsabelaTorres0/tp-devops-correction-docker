@@ -1,3 +1,4 @@
+#In our playbook er are autmating our function so we tell our machine where to go, which functions to use and the applications use, in which order so it runs correctly
 - hosts: all
   gather_facts: true
   become: true

@@ -1,5 +1,5 @@
 ---
-# tasks file for roles/create-second-net
+# tasks file for roles/create-second-net, so it dosen't disturb my db and we connect app and proxy to this one network
 - name: Create Docker network
   docker_network:
     name: my-second-net

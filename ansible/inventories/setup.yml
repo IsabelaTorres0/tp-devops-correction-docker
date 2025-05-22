@@ -1,3 +1,4 @@
+#This command is indiating us where we can connect our server and how are we going to connect our server 
 all:
  vars:
    ansible_user: admin

@@ -1,5 +1,6 @@
 ---
 # tasks file for roles/lunch_proxy
+# We are using apache httpd so we can enter our proxy container and is access our app 
 - name: Launch HTTPD proxy container
   docker_container:
     name: httpd
