@@ -51,8 +51,8 @@ This is because github is by default a public space where everyone can add their
 ## 2-4 For what purpose do we need to push docker images?
 - that way we can access it remotly and between environments
 
-## 3-1 Document your inventory and base commands
-## 3-2 Document your playbook
-## 3-3 Document your docker_container tasks configuration.
+### 3-1 Document your inventory and base commands
+### 3-2 Document your playbook
+### 3-3 Document your docker_container tasks configuration.
 
 
