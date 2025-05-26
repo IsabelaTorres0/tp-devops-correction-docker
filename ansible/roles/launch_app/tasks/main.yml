@@ -1,6 +1,6 @@
 ---
 # tasks file for roles/lunch_app
-#we have this different networks so we can connect the image to our different environments
+# We have this different networks so we can connect the image to our different environments
 - name: Launch simple-api container
   docker_container:
   #we manage our container so we know which container we are picking, and telling our machine how many times are we going to restart it

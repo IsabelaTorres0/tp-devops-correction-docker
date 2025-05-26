@@ -49,6 +49,6 @@ public class DepartmentController {
 
     @GetMapping("/test")
     public ResponseEntity<Object> getDepartmentCountByName() {
-        return ResponseEntity.ok("test ok")
+        return ResponseEntity.ok("test ok");
     }
 }

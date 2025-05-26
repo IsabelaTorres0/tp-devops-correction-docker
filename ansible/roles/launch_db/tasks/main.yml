@@ -1,6 +1,6 @@
 ---
 # tasks file for roles/lunch_db
-#This is our database and we use it to connect to our app of our Docker network
+# This is our database and we use it to connect to our app of our Docker network
 # We are using our container in our database (connected to a separate network so it dosen't crash) 
 - name: Launch PostgreSQL container
   docker_container:
